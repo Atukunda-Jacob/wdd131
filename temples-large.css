@@ -1,7 +1,0 @@
-@media screen and (min-width: 700px){
-  #menu{display:none}
-  header{justify-content:space-between}
-  nav{display:flex!important;flex-direction:row;position:static;width:auto;background:none}
-  .container{grid-template-columns:1fr 1fr 1fr}
-  main{max-width:1200px}
-}
