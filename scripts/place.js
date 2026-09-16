@@ -1,18 +1,18 @@
-// Footer
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+// Footer dates
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = `Last Modification: ${document.lastModified}`;
 
-// Windchill - One function, metric
-function calculateWindChill(tempC, windKmh) {
-    return 13.12 + 0.6215*tempC - 11.37*Math.pow(windKmh, 0.16) + 0.3965*tempC*Math.pow(windKmh, 0.16);
+// Windchill calculation
+function calculateWindChill(temp, wind) {
+    return (13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16)).toFixed(1);
 }
 
-const temp = parseFloat(document.getElementById("temp").textContent);
-const wind = parseFloat(document.getElementById("wind").textContent);
-let windChillText = "N/A";
+const temp = 10;
+const wind = 12;
+const windChillElement = document.getElementById("windchill");
 
 if (temp <= 10 && wind > 4.8) {
-    windChillText = calculateWindChill(temp, wind).toFixed(1) + " °C";
+    windChillElement.textContent = `${calculateWindChill(temp, wind)}°C`;
+} else {
+    windChillElement.textContent = "N/A";
 }
-
-document.getElementById("windchill").textContent = windChillText;
