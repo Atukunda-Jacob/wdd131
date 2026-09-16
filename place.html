@@ -1,50 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Uganda - Atukunda Jacob</title>
-<meta name="description" content="WDD131 W03 Country Page - Uganda">
-<meta name="author" content="Atukunda Jacob">
-<link rel="stylesheet" href="styles/place.css">
-<script src="scripts/place.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 W03 Country Page - Uganda</title>
+    <meta name="description" content="Discover Uganda, the Pearl of Africa - explore its geography, culture, Lake Victoria beauty and weather data for WDD131 country page.">
+    <meta name="author" content="Atukunda Jacob">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
 </head>
 <body>
-<header><h1>Uganda</h1></header>
-<main>
-<div class="hero">
-<picture>
-<source srcset="images/hero-large.webp" media="(min-width: 700px)">
-<img src="images/hero-small.webp" srcset="images/hero-small.webp 600w, images/hero-large.webp 1000w" sizes="(max-width: 600px) 600px, 1000px" alt="Landscape of Uganda near Lake Victoria" width="1000" height="500">
-</picture>
-</div>
-<section class="data">
-<h2>Data</h2>
-<ul>
-<li><span class="label">Area:</span> 241,038 sq km</li>
-<li><span class="label">Population:</span> 48,582,334</li>
-<li><span class="label">Capital:</span> Kampala</li>
-<li><span class="label">Languages:</span> English, Swahili</li>
-<li><span class="label">Currency:</span> Ugandan Shilling</li>
-<li><span class="label">Time Zone:</span> UTC+3</li>
-<li><span class="label">Calling Code:</span> +256</li>
-<li><span class="label">Internet TLD:</span> .ug</li>
-</ul>
-</section>
-<section class="weather">
-<h2 class="weather-heading">Weather</h2>
-<img src="images/weather-icon.svg" alt="Weather icon - partly cloudy" class="weather-icon-mobile" width="80" height="80">
-<ul>
-<li><span class="label">Temperature:</span> <span id="temp">10</span> °C</li>
-<li><span class="label">Conditions:</span> Partly Cloudy</li>
-<li><span class="label">Wind:</span> <span id="wind">12</span> km/h</li>
-<li><span class="label">Wind Chill:</span> <span id="windchill"></span></li>
-</ul>
-</section>
-</main>
-<footer>
-<p>&copy;<span id="year"></span> 🌍 Atukunda Jacob | Uganda</p>
-<p>Last Modified: <span id="lastModified"></span></p>
-</footer>
+    <header>
+        <h1>Uganda</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-small.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Lake Victoria landscape in Uganda" width="500" height="250">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="info">
+                <p><span class="label">Area:</span> 241,038 sq km</p>
+                <p><span class="label">Population:</span> 48,582,334</p>
+                <p><span class="label">Capital:</span> Kampala</p>
+                <p><span class="label">Languages:</span> English, Swahili, Luganda</p>
+                <p><span class="label">Currency:</span> Ugandan Shilling</p>
+                <p><span class="label">Time Zone:</span> UTC+3</p>
+                <p><span class="label">Calling Code:</span> +256</p>
+                <p><span class="label">Internet TLD:</span> .ug</p>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather <img src="images/weather-icon.svg" alt="Weather Icon" class="weather-icon" width="50" height="50"></h2>
+            <div class="info">
+                <p><span class="label">Temperature:</span> <span id="temp">10</span>°C</p>
+                <p><span class="label">Conditions:</span> Partly Cloudy</p>
+                <p><span class="label">Wind:</span> <span id="wind">12</span> km/h</p>
+                <p><span class="label">Wind Chill:</span> <span id="windchill"></span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Atukunda Jacob | Uganda</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
