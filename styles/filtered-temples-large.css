@@ -1,0 +1,6 @@
+@media screen and (min-width: 600px){
+ #menu { display:none; }
+ .navigation { display:flex; flex-direction:row; }
+ .container { grid-template-columns: repeat(3, 1fr); }
+ header { flex-direction:row; }
+}
