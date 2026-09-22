@@ -1,6 +1,21 @@
-@media screen and (min-width: 600px){
- #menu { display:none; }
- .navigation { display:flex; flex-direction:row; }
- .container { grid-template-columns: repeat(3, 1fr); }
- header { flex-direction:row; }
+@media screen and (min-width: 500px) {
+    .navigation {
+        display: flex;
+    }
+    .navigation ul {
+        flex-direction: row;
+    }
+    #menu {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    #temples-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    nav ul {
+        display: flex;
+    }
 }
