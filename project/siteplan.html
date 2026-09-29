@@ -1,0 +1,143 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampala Fresh Market - Site Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1A5D1A;
+            --secondary: #F4A300;
+            --accent: #FFFFFF;
+            --bg: #F9F5EB;
+            --text: #333333;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary);
+        }
+        h1 {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        h2 {
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+        .color-sample {
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            border: 1px solid #000;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0;}
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left;}
+        th { background-color: var(--primary); color: white; }
+        .wireframe {
+            border: 2px dashed var(--primary);
+            padding: 15px;
+            margin: 20px 0;
+            background: white;
+            text-align: center;
+        }
+        .wireframe-box { background: #ddd; margin: 5px; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>W05 Project: Website Planning Document</h1>
+
+    <h2>1. Site Name</h2>
+    <h3>Kampala Fresh Market</h3>
+    <p><strong>Logo:</strong> 🥬 Kampala Fresh Market (simple text logo)</p>
+    <p>I chose this name because it represents a local online hub for fresh produce, vendors, and market prices in Kampala. It's relevant, short, and easy to remember. Domain availability: kampala-fresh-market.org</p>
+
+    <h2>2. Site Purpose</h2>
+    <p>The site provides a hub for Kampala shoppers and vendors by providing vendor information, daily market price lists, seasonal produce guides, and a contact/membership form for vendors to join the market network.</p>
+
+    <h2>3. Scenarios</h2>
+    <ul>
+        <li>What are the current prices for tomatoes and matooke in Nakasero Market today?</li>
+        <li>Where can I find contact information for organic vegetable vendors in Kampala?</li>
+    </ul>
+
+    <h2>4. Color Schema</h2>
+    <p>I am using my selected colors on this document as required.</p>
+    <table>
+        <tr>
+            <th>Color</th>
+            <th>Hex</th>
+            <th>Use</th>
+        </tr>
+        <tr>
+            <td><span class="color-sample" style="background-color: #1A5D1A;"></span> Primary - Forest Green</td>
+            <td>#1A5D1A</td>
+            <td>Headings, header background, primary buttons</td>
+        </tr>
+        <tr>
+            <td><span class="color-sample" style="background-color: #F4A300;"></span> Secondary - Market Gold</td>
+            <td>#F4A300</td>
+            <td>Accents, borders, call-to-action highlights</td>
+        </tr>
+        <tr>
+            <td><span class="color-sample" style="background-color: #F9F5EB;"></span> Background - Warm Beige</td>
+            <td>#F9F5EB</td>
+            <td>Page background</td>
+        </tr>
+        <tr>
+            <td><span class="color-sample" style="background-color: #333333;"></span> Text - Dark Gray</td>
+            <td>#333333</td>
+            <td>Paragraph text</td>
+        </tr>
+    </table>
+
+    <h2>5. Typography</h2>
+    <p><strong>Heading Font: Montserrat Bold</strong> - Used for all h1, h2, h3. It is bold and modern for a market brand.</p>
+    <p style="font-family: 'Montserrat', sans-serif; font-size: 1.5em;">Example: Fresh Produce Every Day</p>
+    <p><strong>Body Font: Open Sans Regular</strong> - Used for all paragraphs, lists, and general text. Very readable on mobile.</p>
+    <p style="font-family: 'Open Sans', sans-serif;">Example: Welcome to Kampala Fresh Market, your daily source for market prices.</p>
+
+    <h2>6. Wireframes</h2>
+    <h3>Mobile View (320px)</h3>
+    <div class="wireframe" style="max-width: 320px; margin: auto;">
+        <div class="wireframe-box">[LOGO & HAMBURGER MENU]</div>
+        <div class="wireframe-box" style="height: 100px;">[HERO IMAGE - Market Banner]</div>
+        <div class="wireframe-box">[PURPOSE STATEMENT]</div>
+        <div class="wireframe-box">[PRICE LIST CARDS - stacked]</div>
+        <div class="wireframe-box">[VENDOR HIGHLIGHT]</div>
+        <div class="wireframe-box">[FOOTER - Contact]</div>
+    </div>
+
+    <h3>Desktop / Wider View (1024px)</h3>
+    <div class="wireframe">
+        <div class="wireframe-box">[LOGO | Navigation Menu - Horizontal]</div>
+        <div style="display: flex;">
+            <div class="wireframe-box" style="flex: 2; height: 200px;">[HERO IMAGE]</div>
+            <div class="wireframe-box" style="flex: 1;">[QUICK PRICES SIDEBAR]</div>
+        </div>
+        <div style="display: flex;">
+            <div class="wireframe-box" style="flex: 1;">[Card 1]</div>
+            <div class="wireframe-box" style="flex: 1;">[Card 2]</div>
+            <div class="wireframe-box" style="flex: 1;">[Card 3]</div>
+        </div>
+        <div class="wireframe-box">[FOOTER - 3 columns]</div>
+    </div>
+
+</body>
+</html>
