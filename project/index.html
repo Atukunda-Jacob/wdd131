@@ -3,48 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kampala Fresh Market - Fresh organic produce">
-    <title>Kampala Fresh Market - Home</title>
-    <link rel="stylesheet" href="styles/project.css">
+    <title>Kampala Fresh Market</title>
+    <meta name="author" content="Atukunda Jacob">
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; background:#f5f5f0; color:#333; text-align:center; }
+        .hero { padding: 20px; }
+        .hero img { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; }
+        h1 { font-size: 28px; margin: 10px 0; line-height: 1.2; }
+        .btn { display:inline-block; background:#2e7d32; color:white; padding:14px 28px; border-radius:8px; text-decoration:none; font-weight:bold; margin-top:15px; }
+        .why { text-align:left; padding:20px; }
+        .card { background:white; border-radius:12px; padding:16px; margin-bottom:12px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+        .card img { width:100%; height:150px; object-fit:cover; border-radius:8px; }
+        .card h3 { margin:10px 0 5px; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Kampala Fresh Market</h1>
-        <button id="menuBtn">☰</button>
-        <nav id="mainNav">
-            <a href="index.html" class="active">Home</a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
-            <a href="references.html">References</a>
-        </nav>
-    </header>
+
     <main>
         <section class="hero">
-            <img src="images/hero.jpg" alt="Kampala Market" loading="lazy" width="800" height="400">
-            <div class="hero-text">
-                <h2>Fresh From Farm to Your Table</h2>
-                <p>I'm Atukunda Jacob, bringing organic produce from Ugandan farms to Kampala. First time here? Get 10% off!</p>
-                <a href="products.html" class="btn">View Products</a>
-            </div>
+            <img src="images/hero.jpeg" alt="Kampala Market">
+            <h1>Fresh From Farm to Your Table</h1>
+            <p>I'm Atukunda Jacob, bringing organic produce from Ugandan farms to Kampala. First time here? Get 10% off!</p>
+            <a href="products.html" class="btn">View Products</a>
         </section>
-        <section>
+
+        <section class="why">
             <h2>Why Choose Us?</h2>
-            <div class="features">
-                <div class="card">
-                    <img src="images/vegetables.jpg" alt="Fresh vegetables" loading="lazy" width="400" height="300">
-                    <h3>100% Organic</h3>
-                    <p>No chemicals.</p>
-                </div>
-                <div class="card"><h3>Affordable</h3><p>Direct from farmer.</p></div>
-                <div class="card"><h3>Fast Delivery</h3><p>Same day in Kampala.</p></div>
+            
+            <div class="card">
+                <img src="images/vegetables.jpeg" alt="Fresh vegetables">
+                <h3>100% Organic</h3>
+                <p>No chemicals.</p>
             </div>
-            <p id="visitMessage"></p>
+
+            <div class="card">
+                <h3>Affordable</h3>
+                <p>Direct from farmer.</p>
+            </div>
+
+            <div class="card">
+                <h3>Fast Delivery</h3>
+                <p>Same day in Kampala.</p>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; <span id="year"></span> Kampala Fresh Market | Atukunda Jacob</p>
-        <p id="lastModified"></p>
+        <p>&copy; 2026 Kampala Fresh Market | Atukunda Jacob</p>
     </footer>
-    <script src="scripts/project.js"></script>
+
 </body>
 </html>
